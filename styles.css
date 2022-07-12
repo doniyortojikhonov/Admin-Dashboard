@@ -24,7 +24,7 @@
   --card-padding: 1.8rem;
   --padding-1: 1.2rem;
 
-  --box-shadow: 0.2rem 3rem var(var(--color-light));
+  --box-shadow: 0.1rem 0.3rem var(--color-light);
 }
 
 * {
@@ -48,6 +48,7 @@ body {
   background-color: var(--color-background);
   user-select: none;
   overflow-x: hidden;
+  color: var(--color-dark);
 }
 .container {
   display: grid;
@@ -194,3 +195,34 @@ aside .sidebar .message-count {
 }
 
 /* =================================MAIN================================= */
+
+main {
+  margin-top: 1.4rem;
+}
+main .date {
+  display: inline-block;
+  background: var(--color-light);
+  border-radius: var(--border-radius-1);
+  margin-top: 1rem;
+  padding: 0.5rem 1.6rem;
+}
+main .date input[type="date"] {
+  background: transparent;
+  color: var(--color-dark);
+}
+main .insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+main .insights > div {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+}
+main .insights > div:hover {
+  box-shadow: none;
+}
