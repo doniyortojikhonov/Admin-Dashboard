@@ -552,6 +552,9 @@ main .recent-orders a {
     margin-top: 8rem;
     padding: 0 1rem;
   }
+  main .date {
+    display: none;
+  }
   main .recent-orders {
     position: relative;
     margin: 3rem 0 0 0;
